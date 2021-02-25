@@ -320,3 +320,6 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: flex-start; }
+
+.nav__ul {
+  display: flex; }
