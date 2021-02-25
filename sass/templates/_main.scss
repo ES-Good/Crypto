@@ -89,11 +89,10 @@
   }
 }
 .burger {
-  // display: none;
+  display: none;
   position: relative;
   width: 30px;
   height: 25px;
-  display: flex;
   flex-direction: column;
   justify-content: space-between;
   &__line {

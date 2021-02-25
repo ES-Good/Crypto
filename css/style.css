@@ -492,10 +492,10 @@ input:focus {
     margin-right: 10px; }
 
 .burger {
+  display: none;
   position: relative;
   width: 30px;
   height: 25px;
-  display: flex;
   flex-direction: column;
   justify-content: space-between; }
   .burger__line {
@@ -514,6 +514,8 @@ input:focus {
   .section {
     padding-left: 10px;
     padding-right: 10px; }
+  .burger {
+    display: flex; }
   .nav {
     display: none; }
   .main {
