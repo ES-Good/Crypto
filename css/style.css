@@ -295,3 +295,6 @@ template {
  */
 [hidden] {
   display: none; }
+
+.title {
+  font-size: 38px; }
