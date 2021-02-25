@@ -9,23 +9,72 @@
 </head>
 <body>
   
-  <header class="header">
+  <header class="section header">
     <div class="container">
-      <div class="row">
+      <div class="row header__row">
         <div class="header__logo"><img src="img/main/logo.png" alt="logo"></div>
         <nav class="nav">
           <ul class="nav__ul">
-            <li>О нас</li>
-            <li>Как это работает</li>
-            <li>Отзывы</li>
-            <li>Карта</li>
+            <li class="nav__li"><a class="nav__link" href="#">О нас</a></li>
+            <li class="nav__li"><a class="nav__link" href="#">Как это работает</a></li>
+            <li class="nav__li"><a class="nav__link" href="#">Отзывы</a></li>
+            <li class="nav__li"><a class="nav__link" href="#">Карта</a></li>
           </ul>
         </nav>
+        <a href="tel:+78432270634" class="nav__tel">+7 (843) 227-06-34</a>
+
+        <div class="burger">
+          <div class="burger__line"></div>
+          <div class="burger__line"></div>
+          <div class="burger__line"></div>
+        </div>
       </div>
     </div>
     <!-- /.container -->
   </header>
   <!-- /.header -->
+  <ul class="nav__ul nav__ul--mobile">
+    <li class="nav__li nav__li--mobile"><a class="nav__link nav__link--mobile" href="#">О нас</a></li>
+    <li class="nav__li nav__li--mobile"><a class="nav__link nav__link--mobile" href="#">Как это работает</a></li>
+    <li class="nav__li nav__li--mobile"><a class="nav__link nav__link--mobile" href="#">Отзывы</a></li>
+    <li class="nav__li nav__li--mobile"><a class="nav__link nav__link--mobile" href="#">Карта</a></li>
+  </ul>
 
+  <main>
+
+    <section class="section main">
+      <div class="container main__container">
+        <div class="main__box">
+          <h1 class="main__title">Обменивайте <span class="text-orange">криптовалюту</span> без посредников</h1>
+          <h3 class="main__subtitle"><span class="text-bold">Более 100 способов</span> </br> оплаты для проведения сделок</h3>
+          <div class="main__pay">
+            <div class="main__pay-card">Банковский перевод</div>
+            <div class="main__pay-card">Яндекс.Деньги</div>
+            <div class="main__pay-card">Киви-кошелек</div>
+            <div class="main__pay-card">Мобильный счет</div>
+            <div class="main__pay-card">Webmoney</div>
+            <div class="main__pay-card">PayPal</div>
+          </div>
+          <p class="main__text">Зарабатывайте на росте и падении криптовалют уже сейчас!</p>
+          <form action="#" class="main__form">
+            <div class="row main__form-row">
+              <div class="input-group"><input placeholder="Ваше имя" type="text" class="main__input"></div>
+              <div class="input-group"><input placeholder="Ваш телефон" type="tel" class="main__input"></div>
+              <button class="main__button button button-orange">Обменять</button>
+            </div>
+            <div class="main__form-text">Нажимая кнопку «Обменять», Вы даете согласие на обработку <span class="text-underline">персональных данных</span></div>
+          </form>
+        </div>
+
+        <div class="main__support">
+          <img class="main__support-img" src="img/main/support.png" alt="logo">
+          <p class="main__support-text">Поддержка</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="js/script.js"></script>
 </body>
 </html>

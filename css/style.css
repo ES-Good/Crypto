@@ -1,6 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap");
 * {
-  font-family: 'PT Sans', sans-serif; }
+  font-family: 'PT Sans', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  color: #2F2F2F; }
 
 .title {
   font-size: 38px; }
@@ -304,16 +307,53 @@ template {
   display: none; }
 
 * {
-  margin: 0; }
-
-* {
-  padding: 0; }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
 body {
   font-size: 16px; }
 
 ul {
   list-style-type: none; }
+
+a {
+  display: block;
+  text-decoration: none; }
+
+.text-orange {
+  color: #EB6103; }
+
+.text-underline {
+  text-decoration: underline; }
+
+.text-bold {
+  font-weight: bold; }
+
+.section {
+  padding: 0 20px; }
+
+input:focus {
+  outline: none; }
+
+.button {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 120%;
+  color: #FFFFFF;
+  padding: 10px 40px;
+  transition: all 0.3s;
+  border: 1px solid;
+  cursor: pointer;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.22), inset 0px 0px 4px rgba(0, 0, 0, 0.31);
+  border-radius: 5px; }
+
+.button-orange {
+  background-color: #EB6103; }
+  .button-orange:hover {
+    background-color: #ffffff;
+    color: #EB6103; }
 
 .container {
   max-width: 1350px;
@@ -327,5 +367,208 @@ ul {
 .btn {
   font-size: 16px; }
 
+.header {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: #ffffff;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1); }
+  .header__row {
+    align-items: center; }
+
 .nav__ul {
-  display: flex; }
+  display: flex;
+  align-items: flex-start; }
+  .nav__ul--mobile {
+    transition: all 0.3s;
+    flex-direction: column;
+    align-items: center;
+    height: 0;
+    overflow: hidden; }
+    .nav__ul--mobile-active {
+      padding: 20px;
+      height: 165px; }
+
+.nav__tel {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 120%;
+  color: #053978;
+  border: 1.5px solid #053978;
+  border-radius: 8px;
+  padding: 10px 30px;
+  transition: all .3s; }
+  .nav__tel:hover {
+    color: #ffffff;
+    background-color: #053978; }
+
+.nav__li:not(.nav__li:last-of-type) {
+  margin-right: 50px; }
+
+.nav__li--mobile {
+  margin: 0 0 10px 0 !important; }
+
+.nav__link {
+  font-size: 18px;
+  line-height: 120%; }
+  .nav__link--mobile {
+    max-width: 100%;
+    width: 150px;
+    text-align: center; }
+  .nav__link:hover {
+    color: #053978; }
+
+.main {
+  padding-top: 180px;
+  background: url(../img/main/bg.png) no-repeat right;
+  background-position-x: 85%; }
+  .main__title {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 110%;
+    max-width: 500px;
+    margin-bottom: 40px; }
+  .main__subtitle {
+    font-size: 28px;
+    line-height: 110%;
+    margin-bottom: 25px; }
+  .main__pay {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 500px;
+    align-items: center;
+    margin-bottom: 35px; }
+    .main__pay-card {
+      background: #ffffff;
+      border: 1px solid #053978;
+      border-radius: 5px;
+      padding: 10px 15px; }
+    .main__pay-card:not(.main__pay-card:nth-child(3n)) {
+      margin-right: 20px; }
+    .main__pay-card:nth-child(-n+3) {
+      margin-bottom: 20px; }
+  .main__text {
+    font-weight: bold;
+    font-size: 23px;
+    line-height: 120%;
+    margin-bottom: 10px; }
+  .main__form {
+    background: #FFFFFF;
+    box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    padding: 20px; }
+    .main__form-row {
+      margin-bottom: 20px; }
+    .main__form-text {
+      font-size: 13px;
+      line-height: 17px; }
+  .main__input {
+    font-size: 16px;
+    line-height: 120%;
+    padding: 10px 20px;
+    border: 1px solid #828282;
+    box-shadow: inset 0px 0px 6px rgba(0, 0, 0, 0.05);
+    border-radius: 5px;
+    min-width: 240px; }
+  .main__support {
+    padding: 10px 20px;
+    background: #053978;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    max-width: 200px; }
+    .main__support-text {
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 120%;
+      color: #ffffff; }
+    .main__support-img {
+      margin-right: 15px; }
+  .main__container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between; }
+  .main .input-group {
+    margin-right: 10px; }
+
+.burger {
+  position: relative;
+  width: 30px;
+  height: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+  .burger__line {
+    width: 100%;
+    background-color: #053978;
+    height: 3px; }
+
+@media screen and (max-width: 1350px) {
+  .main {
+    background-position-x: 100%;
+    background-position-y: 20%;
+    background-size: 40%;
+    padding-top: 80px; } }
+
+@media screen and (max-width: 992px) {
+  .section {
+    padding-left: 10px;
+    padding-right: 10px; }
+  .nav {
+    display: none; }
+  .main {
+    padding-top: 50px;
+    background: none; }
+    .main__title, .main__subtitle, .main__pay, .main__text {
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center; }
+    .main__pay {
+      justify-content: space-between; }
+      .main__pay-card {
+        width: 180px;
+        margin: 0 0 10px 0 !important; }
+    .main__container {
+      flex-direction: column;
+      align-items: center; }
+    .main__box:first-of-type {
+      margin-bottom: 10px; }
+    .main__input {
+      width: 70%;
+      display: block;
+      margin: auto; }
+    .main__form-row {
+      flex-direction: column;
+      align-items: center; }
+  .input-group {
+    width: 100%;
+    margin-bottom: 15px; } }
+
+@media screen and (max-width: 575px) {
+  .nav__tel {
+    font-size: 14px;
+    padding: 10px; }
+  .main {
+    padding-top: 30px; }
+    .main__title {
+      font-size: 30px;
+      line-height: 38px;
+      max-width: 370px;
+      margin-bottom: 20px; }
+    .main__subtitle {
+      font-size: 24px;
+      line-height: 31px; }
+    .main__text {
+      font-size: 18px;
+      line-height: 110%; }
+    .main__pay {
+      margin-bottom: 20px;
+      justify-content: space-around; }
+    .main__button {
+      width: 100%; }
+    .main__input {
+      width: 90%; } }
+
+@media screen and (max-width: 400px) {
+  .main__pay {
+    flex-direction: column; } }
