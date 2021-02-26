@@ -6,6 +6,7 @@ window.addEventListener('DOMContentLoaded', () => {
     menu.classList.toggle('nav__ul--mobile-active');
   });
 
+<<<<<<< HEAD
   function modalShow(trigger, modal, close) {
     const trigg = document.querySelector(trigger),
           modal_ = document.querySelector(modal),
@@ -26,3 +27,19 @@ window.addEventListener('DOMContentLoaded', () => {
   modalShow('.special__button', '.modal--consult', '.modal__close--consult');
 
 });
+=======
+  $('.slider-course').slick({
+    infinite: false,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings:{
+          slidesToShow: 2
+        }
+      }
+    ]
+  });
+});
+>>>>>>> ccf158152e5c96314fb29bb297b8bd1215a853ed

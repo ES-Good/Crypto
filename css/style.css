@@ -385,24 +385,72 @@ button:focus {
 .btn {
   font-size: 16px; }
 
-.slider-course__card {
-  width: 300px;
-  box-shadow: 0 0 10px #000;
-  border-radius: 15px;
-  padding: 10px;
-  font-family: 'PT Sans', sans-serif;
-  font-weight: 400; }
-  .slider-course__card__header,
-  .slider-course__card .name, .slider-course__card__footer {
-    display: flex;
-    justify-content: space-between; }
-  .slider-course__card__header {
-    margin-bottom: 40px; }
-  .slider-course__card .name__img {
-    margin-right: 15px; }
-  .slider-course__card .name__title {
-    font-weight: 700;
-    font-size: 18px; }
+.slider-course {
+  grid-area: slider-course;
+  width: 80%; }
+  .slider-course__card {
+    box-shadow: 0 0 10px #000;
+    border-radius: 15px;
+    padding: 10px;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+    background: #fff;
+    margin: 10px; }
+    .slider-course__card:focus {
+      outline: none; }
+    .slider-course__card__header,
+    .slider-course__card .name, .slider-course__card__footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+    .slider-course__card__header {
+      margin-bottom: 40px; }
+      .slider-course__card__header .total {
+        align-self: flex-start;
+        position: relative; }
+        .slider-course__card__header .total::after {
+          content: '';
+          position: absolute;
+          width: 15px;
+          height: 15px;
+          background-image: url(../img/calc/coins.png);
+          background-repeat: no-repeat;
+          background-size: contain;
+          left: -15px;
+          top: 50%;
+          transform: translateY(-50%); }
+    .slider-course__card__footer__course {
+      color: #EB6103;
+      font-size: 20px; }
+    .slider-course__card__footer__percent {
+      text-align: right;
+      font-size: 14px; }
+    .slider-course__card .name__img {
+      margin-right: 15px; }
+    .slider-course__card .name__title {
+      font-weight: 700;
+      font-size: 18px; }
+
+.slick-arrow {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-size: 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 40%;
+  cursor: pointer; }
+
+.slick-prev {
+  background-image: url(../img/arrow/left.png);
+  left: -20px; }
+
+.slick-next {
+  background-image: url(../img/arrow/right.png);
+  right: -30px; }
 
 .header {
   padding-top: 10px;
@@ -539,6 +587,9 @@ button:focus {
     width: 100%;
     background-color: #053978;
     height: 3px; }
+
+.calc__inner {
+  margin-top: 6vw; }
 
 .advantages {
   padding-top: 80px;
