@@ -43,5 +43,37 @@ window.addEventListener('DOMContentLoaded', () => {
       }
     ]
   });
+
+  //Валидация
+
+  $('.main__form').validate({
+    errorClass: "invalid",
+    rules: {
+      // Строчное правило
+      mainName: "required",
+      mainTel: "required",
+    },  
+    errorElement: "div",
+    // Сообщения
+    messages: {
+      mainName: "Заполните поле",
+      mainTel: "Заполните поле",
+    },
+  });
+
+  $('.modal--consult-form').validate({
+    errorClass: "invalid",
+    rules: {
+      // Строчное правило
+      consName: "required",
+      consTel: "required",
+    },  
+    errorElement: "div",
+    // Сообщения
+    messages: {
+      consName: "Заполните поле",
+      consTel: "Заполните поле",
+    },
+  });
+  $('[type=tel]').mask('+7(000) 000-00-00');
 });
-  

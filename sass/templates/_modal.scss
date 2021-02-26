@@ -53,6 +53,7 @@
   &__input-group {
     margin: auto;
     margin-bottom: 20px;
+    position: relative;
   }
   &__input {
     width: 100%;
@@ -70,4 +71,10 @@
     width: 100%;
     margin-bottom: 15px;
   }
+}
+
+div.invalid {
+  color: tomato;
+  position: absolute;
+  bottom: -15px;
 }
