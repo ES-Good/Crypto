@@ -7,7 +7,6 @@
 
 .title {
   font-size: 36px;
-  font-family: 'PT Sans', sans-serif;
   font-weight: 700; }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -314,7 +313,9 @@ template {
   box-sizing: border-box; }
 
 body {
-  font-size: 16px; }
+  font-size: 16px;
+  line-height: 130%;
+  background-color: #F3F3F3; }
 
 ul {
   list-style-type: none; }
@@ -505,6 +506,29 @@ input:focus {
     width: 100%;
     background-color: #053978;
     height: 3px; }
+
+.advantages {
+  padding-top: 80px;
+  background: url(../img/advantages/BIT.png) no-repeat right; }
+  .advantages__title {
+    padding-left: 40px;
+    margin-bottom: 30px; }
+  .advantages__logo {
+    margin-right: 20px; }
+  .advantages__box {
+    max-width: 1050px;
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr;
+    grid-gap: 20px; }
+  .advantages__card {
+    display: flex;
+    align-items: center; }
+    .advantages__card-title {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 26px;
+      margin-bottom: 8px; }
 
 @media screen and (max-width: 1350px) {
   .main {
