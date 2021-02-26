@@ -1,0 +1,46 @@
+.step {
+  padding-top: 80px;
+  &__title {
+    margin-bottom: 35px;
+  }
+  &__container {
+    max-width: 1200px;
+    margin: auto;
+  }
+  &__box {
+    background-color: #355F92;
+    border-radius: 5px;
+    display: flex;
+  }
+  &__card {
+    padding: 50px 60px 75px 35px;
+    position: relative;
+    &-title {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 120%;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      margin-bottom: 10px;
+    }
+    &-text {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 120%;
+      color: #FFFFFF;
+      max-width: 195px;
+    }
+  }
+  &__logo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  &__lines {
+    position: absolute;
+    right: 0;
+    top: 40px;
+  }
+}
