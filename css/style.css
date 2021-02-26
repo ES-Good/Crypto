@@ -7,7 +7,6 @@
 
 .title {
   font-size: 36px;
-  font-family: 'PT Sans', sans-serif;
   font-weight: 700; }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -314,7 +313,13 @@ template {
   box-sizing: border-box; }
 
 body {
-  font-size: 16px; }
+  font-size: 16px;
+  line-height: 130%;
+  background-color: #F3F3F3; }
+
+img {
+  max-width: 100%;
+  height: auto; }
 
 ul {
   list-style-type: none; }
@@ -525,6 +530,31 @@ input:focus {
     background-color: #053978;
     height: 3px; }
 
+.advantages {
+  padding-top: 80px;
+  background: url(../img/advantages/BIT.png) no-repeat right; }
+  .advantages__title {
+    padding-left: 40px;
+    margin-bottom: 30px; }
+  .advantages__logo {
+    margin-right: 20px; }
+    .advantages__logo img {
+      max-width: none; }
+  .advantages__box {
+    max-width: 1050px;
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr;
+    grid-gap: 20px; }
+  .advantages__card {
+    display: flex;
+    align-items: center; }
+    .advantages__card-title {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 26px;
+      margin-bottom: 8px; }
+
 @media screen and (max-width: 1350px) {
   .main {
     background-position-x: 100%;
@@ -533,6 +563,13 @@ input:focus {
     padding-top: 80px; } }
 
 @media screen and (max-width: 992px) {
+  .advantages {
+    padding-top: 50px;
+    background: none; }
+    .advantages__box {
+      grid-gap: 10px; }
+    .advantages__logo img {
+      width: 90px; }
   .section {
     padding-left: 10px;
     padding-right: 10px; }
@@ -568,7 +605,38 @@ input:focus {
     width: 100%;
     margin-bottom: 15px; } }
 
+@media screen and (max-width: 767px) {
+  .title {
+    font-size: 28px;
+    line-height: 130%; }
+  .advantages {
+    padding-top: 30px; }
+    .advantages__box {
+      display: flex;
+      flex-direction: column; }
+    .advantages__card {
+      max-width: 500px;
+      margin: auto;
+      margin-bottom: 15px; }
+    .advantages__title {
+      padding-left: 0;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      margin-bottom: 20px; } }
+
 @media screen and (max-width: 575px) {
+  .advantages__title {
+    max-width: 270px; }
+  .advantages__logo img {
+    width: 70px; }
+  .advantages__card-title {
+    font-size: 18px;
+    line-height: 130%;
+    max-width: 200px; }
+  .advantages__text {
+    font-size: 14px;
+    max-width: 320px; }
   .nav__tel {
     font-size: 14px;
     padding: 10px; }
