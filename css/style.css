@@ -693,6 +693,7 @@ button:focus {
     top: 40px; }
 
 .special {
+  padding-bottom: 50px;
   padding-top: 120px; }
   .special__container {
     max-width: 1200px;
@@ -714,6 +715,26 @@ button:focus {
     position: absolute;
     top: -85px;
     right: -140px; }
+
+.we {
+  background-color: #fff;
+  padding-top: 30px;
+  background: url(../img/we/bg.png) no-repeat center; }
+  .we__container {
+    max-width: 1200px;
+    margin: auto; }
+  .we__title {
+    margin: auto;
+    text-align: center;
+    margin-bottom: 60px; }
+  .we__text {
+    max-width: 380px;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 130%; }
+  .we__img {
+    height: 205px;
+    margin-bottom: 50px; }
 
 .map {
   padding-top: 80px; }
@@ -838,11 +859,21 @@ div.invalid {
     background-size: 40%;
     padding-top: 80px; } }
 
+@media screen and (max-width: 1200px) {
+  .we__text {
+    max-width: 300px; } }
+
 @media screen and (max-width: 1150px) {
   .step__card {
     padding: 50px 35px 75px 20px; } }
 
 @media screen and (max-width: 992px) {
+  .we__img {
+    width: 230px;
+    margin-bottom: 30px;
+    height: 170px; }
+  .we__text {
+    max-width: 235px; }
   .footer__nav {
     flex-direction: column;
     align-items: center;
@@ -925,6 +956,15 @@ div.invalid {
     width: 100%; } }
 
 @media screen and (max-width: 767px) {
+  .we__title {
+    margin-bottom: 30px; }
+  .we__text {
+    font-size: 16px;
+    max-width: 170px; }
+  .we__img {
+    width: 160px;
+    height: 130px;
+    margin-bottom: 15px; }
   .special__subtitle {
     font-size: 20px;
     line-height: 120%;
@@ -959,6 +999,19 @@ div.invalid {
       margin-bottom: 20px; } }
 
 @media screen and (max-width: 575px) {
+  .we {
+    background: none; }
+    .we__text {
+      max-width: 270px;
+      text-align: center; }
+    .we__row {
+      flex-direction: column;
+      align-items: center; }
+    .we__card {
+      margin-bottom: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
   .footer {
     padding-bottom: 30px; }
     .footer__logo {

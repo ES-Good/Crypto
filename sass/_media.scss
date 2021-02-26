@@ -22,6 +22,14 @@
   }
 }
 
+@media screen and ( max-width: 1200px ) {
+  .we {
+    &__text {
+      max-width: 300px;
+    }
+  }
+}
+
 @media screen and ( max-width: 1150px ) {
   .step {
     &__card {
@@ -31,6 +39,16 @@
 }
 
 @media screen and ( max-width: 992px ) {
+  .we {
+    &__img {
+      width: 230px;
+      margin-bottom: 30px;
+      height: 170px;
+    }
+    &__text {
+      max-width: 235px;
+    }
+  }
   .footer {
     &__nav {
       flex-direction: column;
@@ -158,6 +176,20 @@
 }
 
 @media screen and ( max-width: 767px ) {
+  .we {
+    &__title {
+      margin-bottom: 30px;
+    }
+    &__text {
+      font-size: 16px;
+      max-width: 170px;
+    }
+    &__img {
+      width: 160px;
+      height: 130px;
+      margin-bottom: 15px;
+    }
+  }
   .special {
     &__subtitle {
       font-size: 20px;
@@ -213,6 +245,23 @@
 
 
 @media screen and ( max-width: 575px ) {
+  .we {
+    background: none;
+    &__text {
+      max-width: 270px;
+      text-align: center;
+    }
+    &__row {
+      flex-direction: column;
+      align-items: center;
+    }
+    &__card {
+      margin-bottom: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
   .footer {
     padding-bottom: 30px;
     &__logo {

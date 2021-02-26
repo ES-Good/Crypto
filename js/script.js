@@ -24,6 +24,8 @@ window.addEventListener('DOMContentLoaded', () => {
   }
 
   modalShow('.special__button', '.modal--consult', '.modal__close--consult');
+  modalShow('.calc__button', '.modal--swap', '.modal__close--swap');
+
   $('.slider-course').slick({
     infinite: false,
     slidesToShow: 3,
@@ -73,6 +75,21 @@ window.addEventListener('DOMContentLoaded', () => {
     messages: {
       consName: "Заполните поле",
       consTel: "Заполните поле",
+    },
+  });
+
+  $('.modal--swap-form').validate({
+    errorClass: "invalid",
+    rules: {
+      // Строчное правило
+      swapName: "required",
+      swapTel: "required",
+    },  
+    errorElement: "div",
+    // Сообщения
+    messages: {
+      swapName: "Заполните поле",
+      swapTel: "Заполните поле",
     },
   });
   $('[type=tel]').mask('+7(000) 000-00-00');

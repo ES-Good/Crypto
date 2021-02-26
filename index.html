@@ -16,10 +16,10 @@
         <div class="header__logo"><img src="img/main/logo.png" alt="logo"></div>
         <nav class="nav">
           <ul class="nav__ul">
-            <li class="nav__li"><a class="nav__link" href="#">О нас</a></li>
-            <li class="nav__li"><a class="nav__link" href="#">Как это работает</a></li>
+            <li class="nav__li"><a class="nav__link" href="#we">О нас</a></li>
+            <li class="nav__li"><a class="nav__link" href="#step">Как это работает</a></li>
             <li class="nav__li"><a class="nav__link" href="#">Отзывы</a></li>
-            <li class="nav__li"><a class="nav__link" href="#">Карта</a></li>
+            <li class="nav__li"><a class="nav__link" href="#map">Карта</a></li>
           </ul>
         </nav>
         <a href="tel:+78432270634" class="nav__tel">+7 (843) 227-06-34</a>
@@ -35,10 +35,10 @@
   </header>
   <!-- /.header -->
   <ul class="nav__ul nav__ul--mobile">
-    <li class="nav__li nav__li--mobile"><a class="nav__link nav__link--mobile" href="#">О нас</a></li>
-    <li class="nav__li nav__li--mobile"><a class="nav__link nav__link--mobile" href="#">Как это работает</a></li>
+    <li class="nav__li nav__li--mobile"><a class="nav__link nav__link--mobile" href="#we">О нас</a></li>
+    <li class="nav__li nav__li--mobile"><a class="nav__link nav__link--mobile" href="#step">Как это работает</a></li>
     <li class="nav__li nav__li--mobile"><a class="nav__link nav__link--mobile" href="#">Отзывы</a></li>
-    <li class="nav__li nav__li--mobile"><a class="nav__link nav__link--mobile" href="#">Карта</a></li>
+    <li class="nav__li nav__li--mobile"><a class="nav__link nav__link--mobile" href="#map">Карта</a></li>
   </ul>
 
   <main>
@@ -247,14 +247,14 @@
               </div>
             </div>
             <div class="calc__converter__btn-container">
-              <button class="button button-orange">Обменять</button>
+              <button class="calc__button button button-orange">Обменять</button>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section advantages">
+    <section id="advantages" class="section advantages">
       <div class="container">
         <h3 class="advantages__title title"><span class="text-orange">Преимущества</span> работы с нами</h3>
         <div class="advantages__box">
@@ -294,7 +294,7 @@
     </section>
     <!-- /.section advantages -->
 
-    <section class="section step">
+    <section id="step" class="section step">
       <div class="step__container">
         <h3 class="step__title title">Как это <span class="text-orange">работает</span></h3>
         <div class="step__box">
@@ -345,12 +345,34 @@
     </section>
     <!-- /.section special -->
 
-    <section class="map">
+    <section id="we" class="section we">
+      <div class="we__container">
+        <h3 class="title we__title">О нашей <span class="text-orange">компании</span></h3>
+        <div class="we__row row">
+          <div class="we__card">
+            <div class="we__img"><img src="img/we/img.png" alt="img"></div>
+            <p class="we__text">У нас можно поменять рубли, доллары или евро на Bitcoin или Ethereum. Легко и просто. </p>
+          </div>
+          <div class="we__card">
+            <div class="we__img"><img src="img/we/img1.png" alt="img"></div>
+            <p class="we__text">Мы делаем продажу и покупку криптовалюты быстрыми и простыми. Служба поддержки моментально отвечает на вопросы</p>
+          </div>
+          <div class="we__card">
+            <div class="we__img"><img src="img/we/img2.png" alt="img"></div>
+            <p class="we__text">Мы считаем своей миссией создание комфортного использования лучших  решений, которые помогут пользователям без труда приобретать и обменивать криптовалютные активы</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /.section we -->
+
+    <section id="map" class="map">
       <div class="map__container">
         <h3 class="title map__title">Как нас <span class="text-orange">найти</span></h3>
         <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A89f80641f4822104207413a72162f01572fe97d3ad639103bc9192767f09b3f0&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=false"></script>
       </div>
     </section>
+
   </main>
 
   <footer class="section footer">
@@ -363,12 +385,12 @@
         </div>
         <div class="footer__box">
           <nav class="footer__nav">
-            <a href="" class="footer__link">Преимущества</a>
-            <a href="" class="footer__link"> Условия</a>
-            <a href="" class="footer__link">О компании</a>
-            <a href="" class="footer__link">Как получить</a>
-            <a href="" class="footer__link">FAQ</a>
-            <a href="" class="footer__link"> Отзывы</a>
+            <a href="#advantages" class="footer__link">Преимущества</a>
+            <a href="#" class="footer__link"> Условия</a>
+            <a href="#we" class="footer__link">О компании</a>
+            <a href="#" class="footer__link">Как получить</a>
+            <a href="#" class="footer__link">FAQ</a>
+            <a href="#" class="footer__link"> Отзывы</a>
           </nav>
           <p class="footer__text footer__address">г. Самара, Московское шоссе, д. 55, оф. 611</p>
         </div>
@@ -399,17 +421,31 @@
 
   </div>
 
-<<<<<<< HEAD
+  <div class="modal modal--swap">
+
+    <div class="modal__dialog">
+      <div class="modal__close modal__close--swap">×</div>
+      <p class="modal__title">Заполнить заявку</p>
+      <form class="modal--swap-form" action="#">
+        <div class="modal__input-group">
+          <input name="swapName" placeholder="Ваше имя" class="modal__input" type="text">
+        </div>
+        <div class="modal__input-group">
+          <input name="swapTel" placeholder="Ваш телефон" class="modal__input" type="tel">
+        </div>
+        <button class="button button-orange modal__button">Обменять</button>
+        <div class="modal__text">Нажимая кнопку «Подать заявку», Вы даете согласие на обработку <span class="text-orange text-underline">персональных данных</span></div>
+      </form>
+    </div>
+
+  </div>
+
   <script src="http://code.jquery.com/jquery-1.8.3.js"></script>
+  <script src="jquery/jquery-3.5.1.min.js"></script>
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="js/jquery.validate.min.js"></script>
   <script src="js/jquery.mask.min.js"></script>
-=======
-=======
-  <script src="jquery/jquery-3.5.1.min.js"></script>
->>>>>>> ccf158152e5c96314fb29bb297b8bd1215a853ed
   <script type="text/javascript" src="slick/slick.min.js"></script>
->>>>>>> 0709f176d981dd3ef11c5903662f4f3bcc0af67b
   <script src="js/script.js"></script>
 </body>
 </html>
