@@ -37,6 +37,11 @@ a {
 input:focus {
   outline: none;
 }
+button {
+  &:focus {
+    outline: none;
+  }
+}
 .button {
   font-style: normal;
   font-weight: normal;
@@ -59,6 +64,8 @@ input:focus {
   &-blue {
     background-color: $blue;
     box-shadow: none;
+    font-size: 22px;
+    font-weight: bold;
     &:hover {
       background-color: $white;
       color: $blue;

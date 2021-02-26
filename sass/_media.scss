@@ -267,3 +267,10 @@
     }
   }
 }
+
+@media screen and ( max-height: 400px ) {
+  .modal {
+    align-items: flex-start;
+    overflow: auto;
+  }
+}
