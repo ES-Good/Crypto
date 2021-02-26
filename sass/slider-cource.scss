@@ -1,0 +1,29 @@
+.slider-course{
+    &__card{
+       width: 300px;
+       box-shadow: 0 0 10px #000;
+       border-radius: 15px;
+       padding: 10px;
+       font-family: 'PT Sans', sans-serif;
+       font-weight: 400;
+
+       &__header,
+       .name,
+       &__footer{
+           display: flex;
+           justify-content: space-between;
+       }
+       &__header{
+           margin-bottom: 40px;
+       }
+       .name{
+           &__img{
+               margin-right: 15px;
+           }
+           &__title{
+               font-weight: 700;
+               font-size: 18px;
+           }
+       }
+    }
+}
