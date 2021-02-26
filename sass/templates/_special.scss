@@ -1,0 +1,30 @@
+.special {
+  &__container {
+    max-width: 1200px;
+    margin: auto;
+    position: relative;
+  }
+  padding-top: 120px;
+  &__title {
+    max-width: 650px;
+    line-height: 120%;
+    margin-bottom: 20px;
+  }
+  &__button {
+    padding: 15px 25px;
+    font-size: 22px;
+    font-weight: bold;
+  }
+  &__subtitle {
+    font-style: normal;
+    font-size: 28px;
+    line-height: 110%;
+    max-width: 540px;
+    margin-bottom: 30px;
+  }
+  &__arrow {
+    position: absolute;
+    top: -85px;
+    right: -140px;
+  }
+}
