@@ -1,0 +1,12 @@
+.map {
+  padding-top: 80px;
+  &__container {
+    max-width: 1600px;
+    margin: auto;
+  }
+  &__title {
+    margin: auto;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+}
