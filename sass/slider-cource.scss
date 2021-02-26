@@ -1,20 +1,54 @@
 .slider-course{
+    grid-area: slider-course;
+    width: 80%;
     &__card{
-       width: 300px;
        box-shadow: 0 0 10px #000;
        border-radius: 15px;
        padding: 10px;
        font-family: 'PT Sans', sans-serif;
        font-weight: 400;
-
+       background: #fff;
+       margin: 10px;
+       &:focus{
+           outline: none;
+       }
+    
        &__header,
        .name,
        &__footer{
            display: flex;
            justify-content: space-between;
+           align-items: center;
        }
        &__header{
            margin-bottom: 40px;
+           .total{
+               align-self: flex-start;
+               position: relative;
+
+               &::after{
+                   content: '';
+                   position: absolute;
+                   width: 15px;
+                   height: 15px;
+                   background-image: url(../img/calc/coins.png);
+                   background-repeat: no-repeat;
+                   background-size: contain;
+                   left: -15px;
+                   top: 50%;
+                   transform: translateY(-50%);
+               }
+           }
+       }
+       &__footer{
+           &__course{
+               color: #EB6103;
+               font-size: 20px;
+           }
+           &__percent{
+               text-align: right;
+               font-size: 14px;
+           }
        }
        .name{
            &__img{
@@ -26,4 +60,27 @@
            }
        }
     }
+}
+
+.slick-arrow{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 40%;
+    cursor: pointer;
+}
+
+.slick-prev{
+    background-image: url(../img/arrow/left.png);
+    left: -20px;
+}
+.slick-next{
+    background-image: url(../img/arrow/right.png);
+    right: -30px;
 }

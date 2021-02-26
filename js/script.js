@@ -5,4 +5,18 @@ window.addEventListener('DOMContentLoaded', () => {
   burger.addEventListener('click', () => {
     menu.classList.toggle('nav__ul--mobile-active');
   });
+
+  $('.slider-course').slick({
+    infinite: false,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings:{
+          slidesToShow: 2
+        }
+      }
+    ]
+  });
 });
