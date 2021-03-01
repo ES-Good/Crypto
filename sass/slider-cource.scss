@@ -92,11 +92,11 @@
  :root {  
     --card-padding: 20px;
     --card-height: 130px;
-    --card-skeleton: linear-gradient(lightgrey var(--card-height), transparent 0);
+    --card-skeleton: linear-gradient(white var(--card-height), transparent 0);
     
     --avatar-size: 32px;
     --avatar-position: var(--card-padding) var(--card-padding);
-    --avatar-skeleton: radial-gradient(circle 16px at center, white 99%, transparent 0
+    --avatar-skeleton: radial-gradient(circle 16px at center, lightgrey 99%, transparent 0
     );
     
     --title-height: 32px;
@@ -105,7 +105,7 @@
     --title-skeleton: linear-gradient(white var(--title-height), transparent 0);
     
     --desc-line-height: 16px;
-    --desc-line-skeleton: linear-gradient(white var(--desc-line-height), transparent 0);
+    --desc-line-skeleton: linear-gradient(lightgrey var(--desc-line-height), transparent 0);
     --desc-line-1-width:230px;
     --desc-line-1-position: var(--card-padding) 60px;
     --desc-line-2-width:180px;
@@ -133,14 +133,13 @@
       width: 100%;
       height: 150px;
       border-radius:6px;
-      box-shadow: 0 10px 45px rgba(0,0,0, .1);
   
       background-image:
         linear-gradient(
           90deg, 
-          rgba(lightgrey, 0) 0, 
-          rgba(lightgrey, .8) 50%, 
-          rgba(lightgrey, 0) 100%
+          rgba(white, 0) 0, 
+          rgba(white, .8) 50%, 
+          rgba(white, 0) 100%
         ),                          //animation blur
         var(--title-skeleton),      //title
         var(--desc-line-skeleton),  //desc1
