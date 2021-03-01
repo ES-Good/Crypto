@@ -455,60 +455,6 @@ button:focus {
   background-image: url(../img/arrow/right.png);
   right: -30px; }
 
-/*
- * Variables
- */
-:root {
-  --card-padding: 20px;
-  --card-height: 130px;
-  --card-skeleton: linear-gradient(white var(--card-height), transparent 0);
-  --avatar-size: 32px;
-  --avatar-position: var(--card-padding) var(--card-padding);
-  --avatar-skeleton: radial-gradient(circle 16px at center, lightgrey 99%, transparent 0
-    );
-  --title-height: 32px;
-  --title-width: 200px;
-  --title-position: var(--card-padding) 180px;
-  --title-skeleton: linear-gradient(white var(--title-height), transparent 0);
-  --desc-line-height: 16px;
-  --desc-line-skeleton: linear-gradient(lightgrey var(--desc-line-height), transparent 0);
-  --desc-line-1-width:230px;
-  --desc-line-1-position: var(--card-padding) 60px;
-  --desc-line-2-width:180px;
-  --desc-line-2-position: var(--card-padding) 80px;
-  --footer-height: 0px;
-  --footer-position: 0 calc(var(--card-height) - var(--footer-height));
-  --footer-skeleton: linear-gradient(white var(--footer-height), transparent 0);
-  --blur-width: 200px;
-  --blur-size: var(--blur-width) calc(var(--card-height) - var(--footer-height)); }
-
-/*
-   * Card Skeleton for Loading
-   */
-.card-loader {
-  width: 100%;
-  height: var(--card-height); }
-  .card-loader:empty::after {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 150px;
-    border-radius: 6px;
-    background-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0) 100%), var(--title-skeleton), var(--desc-line-skeleton), var(--desc-line-skeleton), var(--avatar-skeleton), var(--footer-skeleton), var(--card-skeleton);
-    background-size: var(--blur-size), var(--title-width) var(--title-height), var(--desc-line-1-width) var(--desc-line-height), var(--desc-line-2-width) var(--desc-line-height), var(--avatar-size) var(--avatar-size), 100% var(--footer-height), 100% 100%;
-    background-position: -150% 0, var(--title-position), var(--desc-line-1-position), var(--desc-line-2-position), var(--avatar-position), var(--footer-position), 0 0;
-    background-repeat: no-repeat;
-    -webkit-animation: loading 1.5s infinite;
-    animation: loading 1.5s infinite; }
-
-@-webkit-keyframes loading {
-  to {
-    background-position: 350% 0, var(--title-position), var(--desc-line-1-position), var(--desc-line-2-position), var(--avatar-position), var(--footer-position), 0 0; } }
-
-@keyframes loading {
-  to {
-    background-position: 350% 0, var(--title-position), var(--desc-line-1-position), var(--desc-line-2-position), var(--avatar-position), var(--footer-position), 0 0; } }
-
 .header {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -680,6 +626,72 @@ button:focus {
     border-radius: 5px;
     font-family: 'PT Sans', sans-serif;
     font-weight: 900; }
+
+.loader-container {
+  display: flex;
+  width: 80%; }
+  .loader-container__card {
+    box-shadow: 0 0 10px #000;
+    border-radius: 15px;
+    padding: 10px;
+    font-weight: 400;
+    background: #fff;
+    margin: 10px;
+    width: 33%; }
+
+/*
+ * Variables
+ */
+:root {
+  --card-padding: 20px;
+  --card-height: 130px;
+  --card-skeleton: linear-gradient(white var(--card-height), transparent 0);
+  --avatar-size: 32px;
+  --avatar-position: var(--card-padding) var(--card-padding);
+  --avatar-skeleton: radial-gradient(circle 16px at center, lightgrey 99%, transparent 0
+    );
+  --title-height: 32px;
+  --title-width: 200px;
+  --title-position: var(--card-padding) 180px;
+  --title-skeleton: linear-gradient(white var(--title-height), transparent 0);
+  --desc-line-height: 16px;
+  --desc-line-skeleton: linear-gradient(lightgrey var(--desc-line-height), transparent 0);
+  --desc-line-1-width:230px;
+  --desc-line-1-position: var(--card-padding) 60px;
+  --desc-line-2-width:180px;
+  --desc-line-2-position: var(--card-padding) 80px;
+  --footer-height: 0px;
+  --footer-position: 0 calc(var(--card-height) - var(--footer-height));
+  --footer-skeleton: linear-gradient(white var(--footer-height), transparent 0);
+  --blur-width: 200px;
+  --blur-size: var(--blur-width) calc(var(--card-height) - var(--footer-height)); }
+
+/*
+   * Card Skeleton for Loading
+   */
+.card-loader {
+  width: 100%;
+  height: var(--card-height); }
+  .card-loader:empty::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 150px;
+    border-radius: 6px;
+    background-image: linear-gradient(90deg, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0) 100%), var(--title-skeleton), var(--desc-line-skeleton), var(--desc-line-skeleton), var(--avatar-skeleton), var(--footer-skeleton), var(--card-skeleton);
+    background-size: var(--blur-size), var(--title-width) var(--title-height), var(--desc-line-1-width) var(--desc-line-height), var(--desc-line-2-width) var(--desc-line-height), var(--avatar-size) var(--avatar-size), 100% var(--footer-height), 100% 100%;
+    background-position: -150% 0, var(--title-position), var(--desc-line-1-position), var(--desc-line-2-position), var(--avatar-position), var(--footer-position), 0 0;
+    background-repeat: no-repeat;
+    -webkit-animation: loading 1.5s infinite;
+    animation: loading 1.5s infinite; }
+
+@-webkit-keyframes loading {
+  to {
+    background-position: 350% 0, var(--title-position), var(--desc-line-1-position), var(--desc-line-2-position), var(--avatar-position), var(--footer-position), 0 0; } }
+
+@keyframes loading {
+  to {
+    background-position: 350% 0, var(--title-position), var(--desc-line-1-position), var(--desc-line-2-position), var(--avatar-position), var(--footer-position), 0 0; } }
 
 .advantages {
   padding-top: 80px;
@@ -915,7 +927,11 @@ div.invalid {
 
 @media screen and (max-width: 1200px) {
   .we__text {
-    max-width: 300px; } }
+    max-width: 300px; }
+  .loader-container .loader-container__card:last-child {
+    display: none; }
+  .loader-container .loader-container__card {
+    width: 50%; } }
 
 @media screen and (max-width: 1150px) {
   .step__card {
@@ -1007,7 +1023,9 @@ div.invalid {
     margin: 0 auto; }
   .calc__converter {
     margin: 80px auto 0;
-    width: 100%; } }
+    width: 100%; }
+  .loader-container {
+    margin: 0 auto; } }
 
 @media screen and (max-width: 767px) {
   .we__title {
@@ -1050,7 +1068,11 @@ div.invalid {
       margin-left: auto;
       margin-right: auto;
       text-align: center;
-      margin-bottom: 20px; } }
+      margin-bottom: 20px; }
+  .loader-container__card:nth-child(2) {
+    display: none; }
+  .loader-container__card {
+    width: 100% !important; } }
 
 @media screen and (max-width: 575px) {
   .we {
