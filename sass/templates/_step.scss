@@ -8,9 +8,11 @@
     margin: auto;
   }
   &__box {
-    background-color: #355F92;
-    border-radius: 5px;
-    display: flex;
+    &__inner{
+      background-color: #355F92;
+      border-radius: 5px;
+      display: flex;
+    }
   }
   &__card {
     padding: 50px 60px 75px 35px;

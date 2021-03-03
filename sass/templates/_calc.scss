@@ -41,6 +41,17 @@
         font-family: 'PT Sans', sans-serif;
         font-weight: 900;
     }
+    &__button{
+      position: relative;
+      &__text{
+        position: absolute;
+        width: 110%;
+        font-size: 16px;
+        top: 50%;
+        transform: translate(-150%, -50%);
+        color: #828282;
+      }
+    }
 }
 
 .loader-container{

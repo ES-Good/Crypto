@@ -117,11 +117,6 @@
     &__box {
       grid-gap: 10px;
     }
-    &__logo {
-      & img {
-        width: 90px;
-      }
-    }
   }
   .section {
     padding-left: 10px;
@@ -138,11 +133,20 @@
       left: 85px;
     }
     padding-top: 50px;
-    background: none;
+    background-image: url(../img/main/bg.png);
+    background-size: 450px;
+    background-position-y: -50px;
+    background-position-x: 150px;
     &__title, &__subtitle, &__pay, &__text {
       margin-left: auto;
       margin-right: auto;
       text-align: center;
+    }
+    &__text{
+      text-align: left;
+      max-width: 300px;
+      margin-left: initial;
+      margin-right: initial;
     }
     &__pay {
       justify-content: space-between;
@@ -267,14 +271,14 @@
 
 @media screen and ( max-width: 575px ) {
   .we {
-    background: none;
+    background-position-x:100px;
     &__text {
       max-width: 270px;
       text-align: center;
     }
     &__row {
       flex-direction: column;
-      align-items: center;
+      align-items: flex-start;
     }
     &__card {
       margin-bottom: 20px;
@@ -324,6 +328,9 @@
     &__img {
       display: none;
     }
+    &__img_mobile{
+      display: block;
+    }
     &__button {
       margin: auto;
       display: block;
@@ -335,6 +342,21 @@
       .step__lines {
         display: none;
       }
+      &-title{
+        font-size: 22px;
+      }
+      &-text{
+        font-size: 18px;
+      }
+    }
+    &__box{
+      flex-wrap: nowrap;
+      overflow-x: scroll;
+
+      &__inner{
+        display: flex;
+        width: 1200px;
+      }
     }
   }
   .advantages {
@@ -342,9 +364,8 @@
       max-width: 270px;
     }
     &__logo {
-      img {
-        width: 70px;
-      }
+      margin-right: -15px;
+      transform: translateX(-30px);
     }
     &__card {
       &-title {
@@ -370,14 +391,18 @@
       left: 10px;
     }
     &__title {
-      font-size: 30px;
-      line-height: 38px;
-      max-width: 370px;
+      font-size: 22px;
+      line-height: 20px;
+      max-width: 280px;
+      margin-left: initial;
+      margin-right: initial;
       margin-bottom: 20px;
+      text-align: left;
     }
     &__subtitle {
-      font-size: 24px;
-      line-height: 31px;
+      font-size: 16px;
+      line-height: 16px;
+      text-align: left;
     }
     &__text {
       font-size: 18px;
@@ -385,7 +410,13 @@
     }
     &__pay {
       margin-bottom: 20px;
-      justify-content: space-around;
+      justify-content: flex-start;
+      &-card{
+        font-size: 10px;
+        padding: 6px 7px;
+        width: 120px;
+        margin: 10px !important;
+      }
     }
     &__button {
       width: 100%;
@@ -394,11 +425,21 @@
       width: 90%;
     }
   }
+  .calc{
+    &__button{
+      width: 100%;
+      margin-bottom: 50px;
+      &__text{
+        top: 150%;
+        transform: translate(-40%, -50%);
+      }
+    }
+  }
 }
 @media screen and ( max-width: 400px ) {
   .main {
     &__pay {
-      flex-direction: column;
+      flex-direction: row;
     }
   }
 }
