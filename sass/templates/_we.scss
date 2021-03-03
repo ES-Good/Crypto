@@ -2,13 +2,14 @@
   background-color: #fff;
   padding-top: 30px;
   background: url(../img/we/bg.png) no-repeat center;
+  position: relative;
   &__container {
     max-width: 1200px;
     margin: auto;
   }
   &__title {
     margin: auto;
-    text-align: center;
+    text-align: left;
     margin-bottom: 60px;
   }
   &__text {
@@ -20,5 +21,10 @@
   &__img {
     height: 205px;
     margin-bottom: 50px;
+  }
+  &__mobile-img{
+    position: absolute;
+    right: 0;
+    top: 0;
   }
 }
