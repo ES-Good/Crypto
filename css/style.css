@@ -619,7 +619,8 @@ button:focus {
     .calc__converter__btn-container {
       display: flex;
       justify-content: center;
-      align-items: center; }
+      align-items: center;
+      position: relative; }
   .calc .general-style-input {
     width: 40%;
     padding: 10px;
@@ -630,7 +631,6 @@ button:focus {
     position: relative; }
     .calc__button__text {
       position: absolute;
-      width: 100%;
       font-size: 16px;
       top: 50%;
       transform: translate(-150%, -50%);
@@ -1212,8 +1212,8 @@ div.invalid {
     width: 100%;
     margin-bottom: 50px; }
     .calc__button__text {
-      top: 150%;
-      transform: translate(-40%, -50%); } }
+      top: 80%;
+      transform: translate(0, -50%); } }
 
 @media screen and (max-width: 400px) {
   .main__pay {
